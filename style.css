@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding:0px ;
+    box-sizing: border-box !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cardw:18rem;
+    --cardh:25rem;
+    --navh:6vh;
+    --navh2:31vh; 
+    --webw:99vw;
+    --imgh:18rem;
+    --imgw:17.75rem;
+
+}
+body{
+    color: #000;
+     /* overflow-x:hidden ; */
+}
+/*================================== nav bar ==================================== */
+.nav1{
+    background-color:rgb(233, 226, 226);
+    height:var(--navh) !important;
+    width: var(--webw);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    border-bottom: 1px solid rgb(202, 196, 196);
+    position:fixed;
+}
+nav{
+    text-transform: capitalize;
+}
+.nav2{
+    height:var(--navh2);
+    width: var(--webw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+i{
+    padding: 0 1rem;
+    margin: 0px;
+    cursor: pointer;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav2>.div1>div{
+    height:5rem;
+    width:5rem;
+    padding: 0 1rem 0 2.8rem;
+    border:1px solid rgb(201, 196, 196);
+    background-image: url(/asets/Logo_Devogue.jpg);
+    background-size:cover;
+    background-position: center;
+    cursor: pointer;
+
+}
+.div1{
+    display: flex;
+}
+.div3>.fa-solid{
+    font-size: 150%;
+}
+/* =============================================overlays========================================= */
+.overlay>button:hover{
+    border: 2px solid white;
+    padding: 16px 28.8px;
+    margin:9px;
+}
+.img{
+    height: 70vh;
+    width: 99vw;
+    border:1px solid black;
+    background-image:url(./asets/WhatsApp_Image_2023-08-03_at_6.22.18_PM_5e29fd5a-fb3a-4001-a8af-0d1f9795fb8b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    width: 99vw;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem 0px;
+    text-align: center;
+}
+.overlay>p{
+    margin: 0 18%;
+}
+.overlay>button{
+    padding: 16px 28.8px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: none;
+}
+.overlay>h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+/* ===========================================articles======================================== */
+.art1,.art2,.art3,.art4,.art5,.art6,.art7,.art8{
+    width: var(--cardw);
+    height: var(--cardh);
+    border:2px solid rgb(197, 192, 192);
+    border-radius: 20px;
+}
+.h:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow:0 0 10px black;
+}
+.txt>p{
+    font-size: 75%;
+}
+.txt{
+    padding:1rem;
+} 
+/* ======================================containers for arts===================================== */
+.con1{
+    display: flex;
+    justify-content: space-around;
+    gap:-300px;
+    width: 50vw;
+}
+.con2{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+.main{
+    display: flex;
+
+    padding: 1rem 0rem;
+}
+/* =====================================buttons====================================== */
+button{
+    color:white;
+    margin: 10px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.p{
+    padding: .5rem;
+    border-radius: 15px;
+}
+.bu{
+    height:5rem;
+    width: var(--webw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bu>button{
+    padding: 1rem 2rem;
+}
+/* ======================================Elements================================ */
+h1{
+    padding: 1rem;
+    text-transform: capitalize;
+}
+title{
+    text-transform: capitalize;
+}
+/* ========================================arts pics==================================== */
+.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.e{
+    height:var(--imgh);
+    width: var(--imgw);
+    cursor: pointer;
+    border-radius: 16px;
+}
+.pic1{
+    background-image: url(./asets/formals/3.jpg);
+    background-size:cover;
+}
+.pic1:hover{
+    background-image: url(./asets/formals/4.jpg);
+    background-size:cover; 
+    cursor: pointer;
+    animation: img .3s ease;
+}
+.star{
+    display: flex;
+    align-items: center;
+    font-size: 50%;
+}
+.fa-star,.fa-star-half-stroke{
+    padding: .2rem !important;
+}
+.pic2{
+    background-image: url(./asets/formals/9.jpg);
+    background-size:cover;
+}
+.pic2:hover{
+    background-image: url(./asets/formals/10.jpg);
+    background-size:cover;
+    cursor: pointer;
+}
+.pic3{
+    background-image: url(./asets/formals/11.jpg);
+    background-size:cover;
+}
+.pic3:hover{
+    background-image: url(./asets/formals/12.jpg);
+    background-size:cover;
+    cursor: pointer;
+}
+.pic4{
+    background-image: url(./asets/formals/13.jpg);
+    background-size:cover;
+}
+.e{
+    background-position: center;
+}
+.e:hover{
+    animation: img .3s ease-in-out;
+}
+.pic4:hover{
+    background-image: url(./asets/formals/14.jpg);
+    background-size:cover;
+    cursor: pointer;
+}
+.pic5{
+    background-image: url(./asets/1.jpg);
+    background-size:cover;
+}
+.pic5:hover{
+    background-image: url(./asets/2.jpg);
+    background-size:cover;
+}
+.pic6:hover{
+    background-image: url(./asets/6.png);
+    background-size:cover;
+}
+.pic7:hover{
+    background-image: url(./asets/8.jpg);
+    background-size:cover;
+
+}
+.pic6{
+    background-image: url(./asets/5.jpg);
+    background-size:cover;
+}
+.pic7{
+    background-image: url(./asets/7.jpg);
+    background-size:cover;
+}
+.pic8{
+    background-image: url(./asets/19.jpg);
+    background-size:cover;
+}
+.pic8:hover{
+    background-image: url(./asets/18.jpg);
+    background-size:cover;
+}
+.pic9:hover{
+    background-image: url(./asets/slipon/2.png);
+    background-size:cover;
+    
+}
+.pic9{
+    background-image: url(./asets/slipon/1.png);
+    background-size:cover;
+}
+.pic10{
+    background-image: url(./asets/slipon/3.png);
+    background-size:cover;
+}
+.pic10:hover{
+    background-image: url(./asets/slipon/4..png);
+    background-size:cover;
+}
+.pic11{
+    background-image: url(./asets/slipon/5.png);
+    background-size:cover;
+    
+}
+.pic11:hover{
+    background-image: url(./asets/slipon/6.png);
+    background-size:cover;
+    
+}
+.pic12{
+    background-image: url(./asets/slipon/7.png);
+    background-size:cover;
+    
+}
+.pic12:hover{
+    background-image: url(./asets/slipon/8.png);
+    background-size:cover;
+    
+}
+.pic13{
+    background-image: url(./asets/a1.jpg);
+    background-size:cover;
+    
+}
+.pic14{
+    background-image: url(./asets/b1.jpg );
+    background-size:cover;
+}
+.pic15{
+    background-image: url(./asets/c1.jpg);
+    background-size:cover;
+}
+.pic16{
+    background-image: url(./asets/d1.jpg);
+    background-size:cover;
+}
+.pic14:hover{
+    background-image: url(./asets/b2.jpg);
+    background-size:cover;
+}
+.pic13:hover{
+    background-image: url(./asets/a2.jpg);
+    background-size:cover;
+}
+.pic15:hover{
+    background-image: url(./asets/c2.jpg);
+    background-size: cover;
+}
+.pic16:hover{
+    background-image: url(./asets/d2.jpg);
+    background-size: cover;
+}
+/* ======================================prices====================================== */
+.price1{
+    text-decoration: line-through;
+    color:gray;
+    font-size: 80%;
+    padding:0 1rem;
+}
+.price2{
+    text-decoration: solid;
+    font-size: 80%;
+    padding:0 1rem;
+}
+.d{
+    display:flex;
+    justify-content:left;
+}
+.li1,.li2,.li3{
+    width:33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color:rgb(233, 226, 226);
+}
+.li1{
+    align-items: center !important;
+}
+.li1>ul,.li2>ul,.li3>ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+h2{
+    padding: 2rem;
+
+}
+.handlers{
+    text-align: center;
+    background: #000;
+    color: aliceblue;
+    padding: 12px;
+}
+.handlers i{
+    padding: 0 2rem;
+}
+
+/* =====================================animations=============================== */
+@keyframes img{
+    0%{
+    opacity: 0;
+     }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
